@@ -1,0 +1,135 @@
+*{ /* tout ce qu'il y a dans la page */
+    overflow: auto; /* ajuster pour que ça ne déborde pas */
+}
+body {
+    background-color: rgb(64, 104, 121);
+    font: arial;
+}
+div.contenu{
+    background-color: white;
+    box-shadow: 0px 0px 10px 8px rgb(0,0,0,0.2);
+    margin: 60px 10% 0px 10%;
+    padding: 0px 30px 30px 30px;
+    min-width: 350px;
+    overflow: visible;
+}
+h1{
+    text-align:center;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+p.description{
+    text-align: center;
+    max-width: 400px;
+    display:inline-block;
+    font-size: 14px;
+}
+.centre{
+    text-align: center;
+    width: 100%;
+}
+p.categorie {
+    background-color: black;
+    color: white;
+    display:inline-block;
+    margin-left: 30px;
+    margin-right: 40px;
+    padding: 8px 18px;
+    margin-bottom: 0px;
+    margin-top: -20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+div.categorie {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    overflow: visible;
+}
+div.separateur{
+    background-color: black;
+    width: 100px;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.info{
+    position : relative;
+}
+table.info{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    color:white;
+    background-color: #6C829DC0;
+    height: 80px;
+}
+table.info th{
+    vertical-align: bottom;
+    font-size: 16px;
+    padding: 8px;
+}
+table.info td{
+    vertical-align: top;
+    text-align: center;
+    font-size: 14px;
+}
+img.info {
+    display: block; /* l'image s'affiche dans tout espace du parent */
+    max-height: 400px;
+    object-fit: cover; /* pour garder les proportions quite à couper l'image */
+    min-height: 200px; /* afficher la place min que va prendre */
+    background-color: gray; /* image en attendant qu'elle se charge */
+}
+div.colonne {
+    width: 45%;
+    margin-top: 20px;
+}
+div.colonne h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 5px solid #6C829D;
+}
+div.colonne1 {
+    display: inline-block;
+    margin-right: 10%;
+}
+div.colonne2{
+    float: right; 
+    padding-bottom: 5px;
+}
+div.ligne p{
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid lightgrey;
+    padding: 8px 0;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+table.preparation{
+    font-size: 14px;
+}
+table.preparation p.numero{
+    background-color: #6C829D;
+    color: white;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 14 px;
+    font-weight: bold;
+    padding-top: 4px;
+    box-sizing: border-box; /* la taille du padding est comprise à l'interieur de la box */
+    border-radius: 50%;
+    margin: 0
+}
+table.preparation td {
+    vertical-align: top;
+}
+table.preparation td.prep_etapes{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+table.preparation tr{
+    height: 40px;
+}
